@@ -1,0 +1,36 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourApp.OnboardingPage"
+             BackgroundColor="Black">
+    <StackLayout Padding="20" Spacing="30" VerticalOptions="Center">
+
+        <!-- Logo -->
+        <Image Source="logo.png" HeightRequest="100" HorizontalOptions="Center" />
+
+        <!-- Heading -->
+        <Label Text="Welcome to Aston Martin" 
+               FontSize="24" 
+               FontAttributes="Bold" 
+               TextColor="White" 
+               HorizontalTextAlignment="Center" />
+
+        <!-- Description -->
+        <Label Text="Your journey begins here. Discover the latest updates and highlights from AMF1." 
+               FontSize="16" 
+               TextColor="White" 
+               HorizontalTextAlignment="Center" />
+
+        <!-- Buttons -->
+        <Button Text="Next" 
+                BackgroundColor="White" 
+                TextColor="Black" 
+                CornerRadius="20" 
+                FontAttributes="Bold"
+                Clicked="NextButton_Clicked" />
+
+        <Button Text="Skip" 
+                BackgroundColor="Transparent" 
+                TextColor="White"
+                Clicked="SkipButton_Clicked" />
+    </StackLayout>
+</ContentPage>
